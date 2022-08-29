@@ -22,7 +22,11 @@
   height: auto;
   
 }
-
+.App-logo2 {
+  width: 400px;
+  height: auto;
+  
+}
 #grilla {
   display: grid;
   grid-template-areas: "App-header App-header App-header"

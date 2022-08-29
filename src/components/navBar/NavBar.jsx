@@ -2,6 +2,7 @@ import React from 'react'
 import './navbar.css'
 // import {NavLink} from 'react-router-dom'
 import Bootrsap from 'bootstrap'
+import CartWidget from '../cartWidget/CartWidget'
 
 
 
@@ -15,12 +16,12 @@ function NavBar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <div className="navbar-nav">
-                <li className="navli"><a className="nav-link active" href="#">Inicio</a></li>
+                <li className="navli"><a className="nav-link active" href="#">Home</a></li>
                 <li className="navli"><a className="nav-link active" href="#">Tiempo</a></li>
                 <li className="navli"><a className="nav-link active" href="#">Mercurial</a></li>
                 <li className="navli"><a className="nav-link active" href="#">Phantom</a></li>
                 <li className="navli"><a className="nav-link active" href="#">Premier</a></li>
-                <li className="navli"><a className="nav-link active" href="#">cartwidget</a></li>
+                <li className="navli"><a className="nav-link active" href="#"><CartWidget/></a></li>
               </div>
             </div>
           </div>
