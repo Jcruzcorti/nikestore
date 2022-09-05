@@ -1,8 +1,7 @@
 #body{  
     background-color: #161516;
-    box-sizing: content-box;
-    margin: 15px;
-    
+    box-sizing: content-box;   
+    /* margin: 15px; */
 }
 
 .App {
@@ -15,6 +14,7 @@
   align-items: center; 
   justify-content: space-between;
   background-color: #161516;
+  margin: 15px;
 }
 
 .App-logo {
@@ -27,6 +27,28 @@
   height: auto;
   
 }
+
+
+.App-section{
+  margin: 15px;  
+}
+
+.App-footer{
+  /* acá va un color degradado de más claro a más oscuro */
+  background-color: #0f0f0f;
+
+  
+  
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 100px;
+  margin-bottom: 10px; */
+}
+
+
 #grilla {
   display: grid;
   grid-template-areas: "App-header App-header App-header"
@@ -38,4 +60,3 @@
     grid-area: App-section; }
   #grilla .App-footer {
     grid-area: App-footer; }
-
