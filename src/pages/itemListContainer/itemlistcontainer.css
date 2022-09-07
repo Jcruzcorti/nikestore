@@ -1,0 +1,11 @@
+.WelcomeButton{    
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    border-radius: 4px;
+    box-shadow:2px 2px 3px 0px #e66305;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+      
+}
