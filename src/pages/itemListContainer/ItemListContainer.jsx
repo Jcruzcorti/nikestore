@@ -3,25 +3,42 @@ import './itemlistcontainer.css'
 import { productsData } from '../../mock/ProductsData';
 import ItemList from '../../components/itemList/ItemList';
 import Logo from '../../components/logo/Logo';
+import { useParams } from 'react-router-dom';
 
 
 
 function ItemListContainer(props) {
 
-  const [welcome,setWelcome] =useState(true)
+  const [welcome,setWelcome] =useState(true) 
   const [products, setProducts] = useState([])
+
+  const {categoryId}= useParams();
   
-  function welcomeGreeting() {
-    setWelcome(false)
-  }
+
+
+  // useEffect(()=>{
+  //   console.log(welcome);
+  // },[]);
+
+
 
   useEffect(()=>{
 
     
     const getProducts = new Promise((res,rej)=>{
-      setTimeout(()=>{
-        res(productsData);
-        rej("error");
+      setTimeout(()=>{ 
+         if (categoryId === undefined) {
+          res(productsData);
+          rej("Error")     
+        }
+        else{
+          const categoryFound = productsData.filter(cat=>{
+            return cat.category === categoryId;
+          })
+          res(categoryFound);    
+          rej("Error")     
+        }
+        
       },2000);
 
     });
@@ -30,7 +47,7 @@ function ItemListContainer(props) {
     .then((res)=>{setProducts(res);})
     .catch((rej)=>{setProducts(rej);})
 
-  },[]);
+  },[categoryId]);
 
   
 
@@ -45,15 +62,16 @@ function ItemListContainer(props) {
 
           {
             welcome
-            ? <>
+            ? <div>
                 <h1 style={h1style}>{props.greeting}</h1>
-                <button onClick={welcomeGreeting} className="WelcomeButton">Click here to start the Nike experience</button>
                 <Logo/>
-              </>    
-            : <>
+                <button onClick={()=> setWelcome(false)} className="WelcomeButton">CLICK HERE to start the Nike experience</button>
+                
+              </div>    
+            : <div>
                 <h1 style={h1style}>{props.greeting}</h1>
                 <ItemList items={products}/>       
-              </> 
+              </div> 
              
           }
         </div>

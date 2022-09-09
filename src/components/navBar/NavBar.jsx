@@ -1,12 +1,13 @@
 import React from 'react'
 import './navbar.css'
-// import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import Bootrsap from 'bootstrap'
 import CartWidget from '../cartWidget/CartWidget'
 
 
 
 function NavBar() {
+
   return (
     <div className="divnav">
         <nav className="navbar navbar-expand-lg navbar-dark " >
@@ -15,13 +16,13 @@ function NavBar() {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <div className="navbar-nav">
-                <li className="navli"><a className="nav-link active" href="#">Home</a></li>
-                <li className="navli"><a className="nav-link active" href="#">Tiempo</a></li>
-                <li className="navli"><a className="nav-link active" href="#">Mercurial</a></li>
-                <li className="navli"><a className="nav-link active" href="#">Phantom</a></li>
-                <li className="navli"><a className="nav-link active" href="#">Premier</a></li>
-                <li className="navli"><a className="nav-link active" href="#"><CartWidget/></a></li>
+              <div className="navbar-nav">                       
+                <li className="navli"><NavLink className="nav-link active" to="/">Home</NavLink></li>
+                <li className="navli"><NavLink className="nav-link active" to="/category/Tiempo">Tiempo</NavLink></li>
+                <li className="navli"><NavLink className="nav-link active" to="/category/Mercurial">Mercurial</NavLink></li>
+                <li className="navli"><NavLink className="nav-link active" to="/category/Phantom">Phantom</NavLink></li>
+                <li className="navli"><NavLink className="nav-link active" to="/category/Premier">Premier</NavLink></li>
+                <li className="navli"><NavLink className="nav-link active" to="#"><CartWidget/></NavLink></li>
               </div>
             </div>
           </div>

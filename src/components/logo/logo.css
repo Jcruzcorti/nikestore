@@ -1,6 +1,11 @@
+/* .DivLogoBackground{
+    background-image: url(../../imgs/logonike.png);
+    background-color: aqua;
+} */
 .LogoBackground{
     width: 33.33%;
     height: auto;
+ 
 }
 
 /* *{

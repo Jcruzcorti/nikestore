@@ -2,17 +2,23 @@ import React,{useEffect,useState} from 'react'
 import './itemdetailcontainer.css'
 import {productsData} from '../../mock/ProductsData'
 import ItemDetail from '../../components/itemDetail/ItemDetail';
+import { useParams } from 'react-router-dom';
 
 function ItemDetailContainer(props) {
 
   const [product,setProduct] = useState({})
+  const {itemId} = useParams()
+
 
   useEffect(()=>{
     
     const getProduct = new Promise ((res,rej)=>{
       setTimeout(() => {
-        res(productsData[0]);
-        rej("Erros");
+        const itemFound = productsData.find((boots)=>{
+            return (boots.id === parseInt(itemId) )
+        })
+        res(itemFound);
+        rej("Error");
       }, 2000);
     });
 
@@ -20,7 +26,7 @@ function ItemDetailContainer(props) {
     .then((res)=>{setProduct(res)})
     .catch((rej)=>{setProduct(rej)})
 
-  },[]);
+  },[itemId]);
 
   const h1style = {
     color: props.color,
