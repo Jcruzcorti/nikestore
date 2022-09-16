@@ -4,23 +4,24 @@ import { productsData } from '../../mock/ProductsData';
 import ItemList from '../../components/itemList/ItemList';
 import Logo from '../../components/logo/Logo';
 import { useParams } from 'react-router-dom';
+// import { useContext } from 'react';
+// import { LogoContext } from '../../context/LogoContext';
+
 
 
 
 function ItemListContainer(props) {
 
-  const [welcome,setWelcome] =useState(true) 
+  const [welcome,setWelcome] =useState(true)
   const [products, setProducts] = useState([])
 
   const {categoryId}= useParams();
-  
 
+  function welcomeGreet() {
+      setWelcome(false)
+    }
 
-  // useEffect(()=>{
-  //   console.log(welcome);
-  // },[]);
-
-
+  // const {welcomeGreet} = useContext(LogoContext)
 
   useEffect(()=>{
 
@@ -28,6 +29,7 @@ function ItemListContainer(props) {
     const getProducts = new Promise((res,rej)=>{
       setTimeout(()=>{ 
          if (categoryId === undefined) {
+          
           res(productsData);
           rej("Error")     
         }
@@ -62,18 +64,19 @@ function ItemListContainer(props) {
 
           {
             welcome
-            ? <div>
-                <h1 style={h1style}>{props.greeting}</h1>
-                <Logo/>
-                <button onClick={()=> setWelcome(false)} className="WelcomeButton">CLICK HERE to start the Nike experience</button>
-                
-              </div>    
-            : <div>
-                <h1 style={h1style}>{props.greeting}</h1>
-                <ItemList items={products}/>       
-              </div> 
-             
+            ?<div>
+              <h1 style={h1style}>{props.greeting}</h1>
+              <Logo/>
+              <button onClick={welcomeGreet} className="WelcomeButton">CLICK HERE to start the Nike experience</button>     
+            </div>    
+            :<div>
+              <h1 style={h1style}>{props.greeting}</h1>
+              <ItemList items={products}/>       
+            </div> 
           }
+                
+             
+          
         </div>
       
     </div>

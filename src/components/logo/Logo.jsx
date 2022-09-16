@@ -1,12 +1,12 @@
-import React from 'react'
+// import React,{useState,useEffect} from 'react'
 import logo2 from '../../imgs/logonike.png';
 import './logo.css'
 
-function Logo() {
+function Logo(){
 
   // const [welcome,setWelcome] =useState(true) 
 
-  // function welcomeGreet () {
+  // function welcomeGreet() {
   //   setWelcome(false)
   // }
 
@@ -24,12 +24,26 @@ function Logo() {
   //   .then((resolve)=>{setWelcome(resolve);})
   // },[]);
 
+ 
+
+
+  // const h1style = {
+  //   color: props.color,
+  //   fontSize: props.fontSize
+  // } 
+
+
   return (
     <div className="a">
+      
+        {/* <h1 style={h1style}>{props.greeting}</h1> */}
+      
         <img src={logo2} alt="Nikelogo" className="LogoBackground"/> 
         <img src={logo2} alt="Nikelogo" className="LogoBackground"/> 
         <img src={logo2} alt="Nikelogo" className="LogoBackground"/> 
-        {/* <button onClick={welcomeGreet} className="WelcomeButton">CLICK HERE to start the Nike experience</button>  */}
+      
+        {/* <button onClick={welcomeGreet} className="WelcomeButton">CLICK HERE to start the Nike experience</button> */}
+        
     </div>
   )
 }

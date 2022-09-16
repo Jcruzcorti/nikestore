@@ -6,6 +6,8 @@ function ItemCount({stock,initial,onAdd}) {
 
     const [count,setCount] = useState(initial)
 
+
+
     function Add () {
         if (count<stock){
             setCount(count+1)
@@ -13,7 +15,8 @@ function ItemCount({stock,initial,onAdd}) {
 
         else if (count===stock) {
             setCount(stock);
-            alert("No more perro")
+            alert("No more perro")  
+            
         }
        
     }
@@ -30,7 +33,7 @@ function ItemCount({stock,initial,onAdd}) {
         <button onClick={Subtract} className="buttonSubtract">-</button>
         <span className="count">{count}</span>
         <button onClick={Add} className="buttonAdd">+</button>
-        <button onClick={()=>onAdd(count) }>Add to cart</button>
+        <button onClick={()=>onAdd(count)}>Add to cart</button>
     </div>
   )
 }

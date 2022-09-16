@@ -4,13 +4,21 @@ import {BrowserRouter,Routes,Route, NavLink} from 'react-router-dom';
 import  NavBar  from "./components/navBar/NavBar";
 import ItemListContainer from './pages/itemListContainer/ItemListContainer';
 import ItemDetailContainer from './pages/itemDetailContainer/ItemDetailContainer';
+import Cart from './pages/cart/Cart';
+import CartProvider from './context/CartContext';
+import Footer from './components/footer/Footer';
+// import LogoContextProvider from './context/LogoContext';
 
 
 function App() {
+
   return (
     <div className="App" id="grilla">
-      <BrowserRouter>
+        
 
+     <CartProvider>  
+
+        <BrowserRouter>
           <header className="App-header">
             <NavLink to="/"><img  src={logo} className="App-logo" alt="logo" /></NavLink>        
             <NavBar/>
@@ -21,14 +29,18 @@ function App() {
               <Route path="/" element={<ItemListContainer greeting="WELCOME TO NIKE STORE" color="#ffffff" fontSize="50px"/>}/>
               <Route path="/category/:categoryId" element={<ItemListContainer greeting="PRODUCT CATEGORY" color="#ffffff" fontSize="40px"/>}/>
               <Route path="/detail/:itemId" element={<ItemDetailContainer greeting="PRODUCT DETAIL" color="#ffffff" fontSize="40px"/>}/>
+              <Route path="/:cart" element={<Cart />}/>
             </Routes>
           </section>
 
           <footer className="App-footer">
-            <p>aaaaa</p>
+            <Footer/>
           </footer>
-        
-      </BrowserRouter>
+
+          </BrowserRouter> 
+          
+
+      </CartProvider>   
     </div>
   );
 }
