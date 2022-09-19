@@ -35,7 +35,7 @@ function ItemDetailContainer(props) {
 
   return (
     <div>
-      <h1 style={h1style}>{props.greeting}</h1>
+      <h1 style={h1style} className="H1Welcome">{props.greeting}</h1>
       <ItemDetail item={product}/>
 
     </div>

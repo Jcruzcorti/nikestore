@@ -1,0 +1,52 @@
+.DivCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    /* float:left;
+    margin: 15px; */
+ 
+}
+/* f4f4f4 */
+.DivCartSecond{
+    padding: 10px;
+    color: #f4f4f4;
+    border: 0.5px solid #000000 ;
+    box-shadow: 0px 0px 2px 1px #e66305;
+    /* text-align: center; */
+    background-color: #000000;
+    border-radius: 6px;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+
+}
+
+.ImgCart{
+    width: 100%;
+    height: auto;
+}
+
+.DescritpionCart{
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: justify;
+} 
+
+
+.PriceCart{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* .PDetailItem{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    
+} */

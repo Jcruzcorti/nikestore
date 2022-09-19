@@ -6,15 +6,15 @@ function Item({item}) {
 
   const urlDetail = `/detail/${item.id}`
   return (
-    <div>
-      <div>
-        <h3>{item.name}</h3>
-        <img src={item.img} alt="" />
-        <p>{item.description}</p>
-        <p>${item.price}</p>
-        <Link to={urlDetail} className="ProductDetail"> <p> See product in detail </p> </Link>
+    <div className="DivItem">
+      <div className="DivSecondItem">
+        <h3 className="H3Item">{item.name}</h3>
+        <img src={item.img} alt=""  className="ImgItem"/>
+        <p className="DescritpionItem">{item.description}</p>
+        <p className="PriceItem">${item.price}</p>
+        <Link to={urlDetail} className="PDetailItem"> <p> See product in detail </p> </Link>
       </div>
-      
+
     </div>
   )
 }

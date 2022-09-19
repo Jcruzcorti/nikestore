@@ -1,0 +1,52 @@
+.DivItem{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    float:left;
+    margin: 15px;
+ 
+}
+/* f4f4f4 */
+.DivSecondItem{
+    padding: 10px;
+    color: #f4f4f4;
+    border: 0.5px solid #000000 ;
+    box-shadow: 6px 6px 10px -5px #e66305;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 6px;
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+
+}
+
+.ImgItem{
+    width: 100%;
+    height: auto;
+}
+
+.DescritpionItem{
+    padding: 15px;
+    font-size: 15px;
+    text-align: justify;
+} 
+
+
+.PriceItem{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.PDetailItem{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    
+}

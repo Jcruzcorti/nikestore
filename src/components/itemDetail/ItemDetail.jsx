@@ -20,17 +20,20 @@ function ItemDetail({item}) {
   }
 
   return (
-    <div>       
-        <h3>{item.name}</h3>
-        <img src={item.img} alt="" />
-        <p>{item.description}</p>
-        <p>${item.price}</p>
-        {
-          addCart === 0
-          ?<ItemCount onAdd={handleOnAdd} stock={5} initial={1}/>
-          : <Link to="/cart"><button>Go to cart</button></Link>
-        }
-        
+    <div className="DivDetail">       
+        <div className="DivDetail1">
+          <h3 className="H3Detail">{item.name}</h3>
+          <img src={item.img} alt="" className="ImgDetail"/>
+        </div>
+        <div className="DivDetail2">
+          <p className="PDetail1">{item.description}</p>
+          <p className="PDetail2">${item.price}</p>
+          {
+            addCart === 0
+            ?<ItemCount onAdd={handleOnAdd} stock={5} initial={1}/>
+            : <Link to="/cart"><button>Go to cart</button></Link>
+          }
+        </div>   
     </div>
   )
 }

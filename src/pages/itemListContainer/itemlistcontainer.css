@@ -1,3 +1,17 @@
+
+.DivItemListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.H1Welcome{
+    font-family: 'Alfa Slab One';
+    padding-top: 30px;
+    
+}
 .WelcomeButton{    
     background-color: #0f0f0f;
     color: #ffffff;

@@ -6,6 +6,7 @@
 
 .App {
   text-align: center;
+  background:linear-gradient(#161516 80%,#0f0f0f);
 }
 .App-header{
   font-family: sans-serif;
@@ -13,7 +14,6 @@
   flex-direction: row;
   align-items: center; 
   justify-content: space-between;
-  background-color: #161516;
   margin: 15px;
 }
 
@@ -33,23 +33,10 @@
   margin: 15px;  
 }
 
-.App-footer{
-  /* acá va un color degradado de más claro a más oscuro */
-  background-color: #0f0f0f;
-
-  
-  
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between; 
-  align-items: center; 
-  margin-top: 100px;
-  margin-bottom: 10px; */
-}
 
 
-#grilla {
+
+/* #grilla {
   display: grid;
   grid-template-areas: "App-header App-header App-header"
  "App-section App-section App-section "
@@ -59,4 +46,4 @@
   #grilla .App-section {
     grid-area: App-section; }
   #grilla .App-footer {
-    grid-area: App-footer; }
+    grid-area: App-footer; } */

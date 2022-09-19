@@ -55,7 +55,8 @@ function ItemListContainer(props) {
 
   const h1style = {
     color: props.color,
-    fontSize: props.fontSize
+    fontSize: props.fontSize,
+    fontFamily: props.fontFamily
   } 
 
   return (
@@ -65,14 +66,17 @@ function ItemListContainer(props) {
           {
             welcome
             ?<div>
-              <h1 style={h1style}>{props.greeting}</h1>
+              <h1 style={h1style} className="H1Welcome">{props.greeting}</h1>
               <Logo/>
               <button onClick={welcomeGreet} className="WelcomeButton">CLICK HERE to start the Nike experience</button>     
             </div>    
-            :<div>
-              <h1 style={h1style}>{props.greeting}</h1>
-              <ItemList items={products}/>       
-            </div> 
+            :<>
+              <h1 style={h1style}  className="H1Welcome">{props.greeting}</h1>
+              <div className="DivItemListContainer">
+                <ItemList items={products}/>       
+              </div> 
+            </>
+             
           }
                 
              

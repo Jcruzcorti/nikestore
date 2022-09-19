@@ -14,12 +14,14 @@ function Cart() {
 
       {
         cart.map((item)=>(
-          <div key={item.id}>
-            <h3>{item.name}</h3>
-            <img src={item.img} alt="" />
-            <p>{item.description}</p>
-            <p>${item.price}</p>
-            <button onClick={()=>{removeItem(item.id)}}>Remove item</button>
+          <div key={item.id} className="DivCart">
+            <div className="DivCartSecond">
+              <h3 className="H3Cart">{item.name}</h3>
+              <img src={item.img} alt="" className="ImgCart"/>
+              <p className="DescritpionCart">{item.description}</p>
+              <p className="PriceCart">${item.price}</p>
+              <button onClick={()=>{removeItem(item.id)}} >Remove item</button>
+            </div>
           </div>
         ))
       }
