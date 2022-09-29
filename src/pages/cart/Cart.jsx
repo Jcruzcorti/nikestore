@@ -9,6 +9,8 @@ function Cart() {
 
   const {cart,removeItem,clear} = useContext(CartContext)
 
+
+
   return (
     <div>
 
@@ -21,6 +23,7 @@ function Cart() {
               <p className="DescritpionCart">{item.description}</p>
               <p className="PriceCart">${item.price}</p>
               <button onClick={()=>{removeItem(item.id)}} >Remove item</button>
+              
             </div>
           </div>
         ))
@@ -28,7 +31,13 @@ function Cart() {
 
       <div>
         {/* <button onClick={clear}>Clear cart</button> */}
-        <Link to="/"><button>Back to Home</button></Link>
+        {
+          cart.length === 0
+          ?<Link to="/"><button>Back to Home</button></Link>
+          :<Link to="/"><button onClick={clear} >Clear cart</button></Link>
+        }
+        
+        
       </div>
 
       

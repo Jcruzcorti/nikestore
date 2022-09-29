@@ -9,6 +9,7 @@
  
 }
 /* f4f4f4 */
+
 .DivCartSecond{
     padding: 10px;
     color: #f4f4f4;
@@ -17,7 +18,7 @@
     /* text-align: center; */
     background-color: #000000;
     border-radius: 6px;
-    width: 300px;
+    width: 50%;
     height: auto;
     margin-left: auto;
     margin-right: auto;

@@ -1,4 +1,5 @@
 import React,{createContext, useState} from 'react';
+import Swal from 'sweetalert2'
 
 
 export const CartContext = createContext()
@@ -12,7 +13,7 @@ function CartProvider({children}) {
 
   function addItem(item,quantity) {
     if (isInCart(item.id)) {
-      alert("Your item is already in the cart")
+      alert("Your product is already in the cart")
     }
     else{
       setCart([...cart,{...item,quantity}])
@@ -33,6 +34,15 @@ function CartProvider({children}) {
 
   function clear() {
     setCart([])
+      Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      iconColor:'#e66305',
+      title: 'The cart is empty.',
+      showConfirmButton: false,
+      timer: 2500,
+      width: "25em",  
+      })
   }
 
 

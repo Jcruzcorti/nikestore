@@ -8,7 +8,9 @@
  
 }
 
-/* *{
-    background-color: #0f0f0f;
-    background-image:url(../../imgs/logonike.png);
-} */
+.PLoading{
+    font-family: 'Alfa Slab One';
+    font-size: 25px;
+    padding-top: 35px;
+    color: #000000;
+}

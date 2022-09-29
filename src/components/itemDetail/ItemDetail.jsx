@@ -1,5 +1,5 @@
 import React, { useState,useContext } from 'react'
-import { Link,useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import ItemCount from '../itemCount/ItemCount';
 import './itemdetail.css'
 import { CartContext } from '../../context/CartContext';
@@ -28,11 +28,12 @@ function ItemDetail({item}) {
         <div className="DivDetail2">
           <p className="PDetail1">{item.description}</p>
           <p className="PDetail2">${item.price}</p>
-          {
+          {/* {
             addCart === 0
             ?<ItemCount onAdd={handleOnAdd} stock={5} initial={1}/>
             : <Link to="/cart"><button>Go to cart</button></Link>
-          }
+          } */}
+          <ItemCount onAdd={handleOnAdd} stock={5} initial={1}/>
         </div>   
     </div>
   )

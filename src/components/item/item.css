@@ -13,10 +13,11 @@
     padding: 10px;
     color: #f4f4f4;
     border: 0.5px solid #000000 ;
-    box-shadow: 6px 6px 10px -5px #e66305;
+    /* box-shadow: 6px 6px 10px -5px #e66305; */
+    box-shadow: 0.5px 0.5px 8px -4px #ffffff;
     text-align: center;
     background-color: #000000;
-    border-radius: 6px;
+    border-radius: 2px;
     width: 400px;
     height: auto;
     margin-left: auto;
@@ -27,13 +28,17 @@
 
 }
 
+.H3Item{
+    font-size: 22px;
+}
+
 .ImgItem{
     width: 100%;
     height: auto;
 }
 
 .DescritpionItem{
-    padding: 15px;
+    padding: 12px;
     font-size: 15px;
     text-align: justify;
 } 
@@ -45,8 +50,15 @@
 }
 
 .PDetailItem{
-    color: #ffffff;
+    color: #7e7e7e;
     font-size: 20px;
     font-weight: bold;
-    
+    text-decoration: none;
+    /* #545454 */
+}
+
+.PDetailItem:hover { 
+    /* color: #e66305;  */
+    color: #ffffff; 
+
 }

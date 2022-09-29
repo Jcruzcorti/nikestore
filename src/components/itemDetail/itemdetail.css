@@ -28,8 +28,10 @@
 .ImgDetail{
     width: 700px;
     height: auto;
+    filter: drop-shadow(2px 2px 5px #ffffff);
   
 }
+
 
 .DivDetail2{
     padding-top: 120px;

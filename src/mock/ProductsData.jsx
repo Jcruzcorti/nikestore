@@ -1,7 +1,7 @@
 export const  productsData = [
     {
         id:1,
-        name: 'Tiempo Legend IX elite sg',
+        name: 'TIEMPO LEGEND IX ELITE SG',
         price: 100,
         stock: 5,
         category: 'Tiempo',
@@ -13,7 +13,7 @@ export const  productsData = [
     ,
     {
         id:2,
-        name: 'Tiempo Legend IX elite fg',
+        name: 'TIEMPO LEGEND IX ELITE FG',
         price: 100,
         stock: 5,
         category: 'Tiempo',
@@ -25,7 +25,7 @@ export const  productsData = [
     ,
     {
         id:3,
-        name: 'Tiempo Legend IX pro fg',
+        name: 'TIEMPO LEGEND IX PRO FG',
         price: 100,
         stock: 5,
         category: 'Tiempo',
@@ -37,7 +37,7 @@ export const  productsData = [
     ,
     {
         id:4,
-        name: 'Tiempo Legend IX pro tf',
+        name: 'TIEMPO LEGEND IX PRO TF',
         price: 100,
         stock: 5,
         category: 'Tiempo',
@@ -49,7 +49,7 @@ export const  productsData = [
     ,
     {
         id:5,
-        name: 'Mercurial Superfly IX elite sg',
+        name: 'MERCURIAL SUPERFLY IX ELITE SG',
         price: 100,
         stock: 5,
         category: 'Mercurial',
@@ -61,7 +61,7 @@ export const  productsData = [
     ,
     {
         id:6,
-        name: 'Mercurial Superfly IX elite fg',
+        name: 'MERCURIAL SUPERFLY IX ELITE FG',
         price: 100,
         stock: 5,
         category: 'Mercurial',
@@ -73,7 +73,7 @@ export const  productsData = [
     ,
     {
         id:7,
-        name: 'Mercurial Superfly IX pro fg',
+        name: 'MERCURIAL SUPERFLY IX PRO FG',
         price: 100,
         stock: 5,
         category: 'Mercurial',
@@ -85,7 +85,7 @@ export const  productsData = [
     ,
     {
         id:8,
-        name: 'Mercurial Vapor XV elite sg',
+        name: 'MERCURIAL VAPOR XV ELITE SG',
         price: 100,
         stock: 5,
         category: 'Mercurial',
@@ -98,7 +98,7 @@ export const  productsData = [
 
     {
         id:9,
-        name: 'Mercurial Vapor XV elite fg',
+        name: 'MERCURIAL VAPOR XV ELITE FG',
         price: 100,
         stock: 5,
         category: 'Mercurial',
@@ -110,7 +110,7 @@ export const  productsData = [
     ,
     {
         id:10,
-        name: 'Mercurial Vapor XV pro fg',
+        name: 'MERCURIAL VAPOR XV PRO FG',
         price: 100,
         stock: 5,
         category: 'Mercurial',
@@ -122,7 +122,7 @@ export const  productsData = [
     ,
     {
         id:11,
-        name: 'Mercurial Vapor XV pro tf',
+        name: 'MERCURIAL VAPOR XV PRO TF',
         price: 100,
         stock: 5,
         category: 'Mercurial',
@@ -134,7 +134,7 @@ export const  productsData = [
     ,
     {
         id:12,
-        name: 'Phantom GT II elite sg',
+        name: 'PHANTOM GT II ELITE SG',
         price: 100,
         stock: 5,
         category: 'Phantom',
@@ -146,7 +146,7 @@ export const  productsData = [
     ,
     {
         id:13,
-        name: 'Phantom GT II elite fg',
+        name: 'PHANTOM GT II ELITE FG',
         price: 100,
         stock: 5,
         category: 'Phantom',
@@ -158,7 +158,7 @@ export const  productsData = [
     ,
     {
         id:14,
-        name: 'Phantom GT II pro fg',
+        name: 'PHANTOM GT II PRO FG',
         price: 100,
         stock: 5,
         category: 'Phantom',
@@ -170,7 +170,7 @@ export const  productsData = [
     ,
     {
         id:15,
-        name: 'Phantom GT II pro tf',
+        name: 'PHANTOM GT II PRO TF',
         price: 100,
         stock: 5,
         category: 'Phantom',
@@ -182,7 +182,7 @@ export const  productsData = [
     ,
     {
         id:16,
-        name: 'The Premier III sg',
+        name: 'THE PREMIER III SG',
         price: 100,
         stock: 5,
         category: 'Premier',
@@ -194,7 +194,7 @@ export const  productsData = [
     ,
     {
         id:17,
-        name: 'The Premier III fg',
+        name: 'THE PREMIER III FG',
         price: 100,
         stock: 5,
         category: 'Premier',
@@ -206,7 +206,7 @@ export const  productsData = [
     ,
     {
         id:18,
-        name: 'The Premier III tf',
+        name: 'THE PREMIER III TF',
         price: 100,
         stock: 5,
         category: 'Premier',

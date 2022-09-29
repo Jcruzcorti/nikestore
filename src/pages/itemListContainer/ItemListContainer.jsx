@@ -17,23 +17,20 @@ function ItemListContainer(props) {
 
   const {categoryId}= useParams();
 
-  function welcomeGreet() {
-      setWelcome(false)
-    }
 
-  // const {welcomeGreet} = useContext(LogoContext)
 
   useEffect(()=>{
-
-    
+  
     const getProducts = new Promise((res,rej)=>{
+      
       setTimeout(()=>{ 
          if (categoryId === undefined) {
-          
+          setWelcome(false)
           res(productsData);
           rej("Error")     
         }
         else{
+          setWelcome(false)
           const categoryFound = productsData.filter(cat=>{
             return cat.category === categoryId;
           })
@@ -41,7 +38,10 @@ function ItemListContainer(props) {
           rej("Error")     
         }
         
-      },2000);
+        
+      },1500);
+
+      
 
     });
 
@@ -65,21 +65,18 @@ function ItemListContainer(props) {
 
           {
             welcome
-            ?<div>
-              <h1 style={h1style} className="H1Welcome">{props.greeting}</h1>
-              <Logo/>
-              <button onClick={welcomeGreet} className="WelcomeButton">CLICK HERE to start the Nike experience</button>     
-            </div>    
+            ?<>  
+              <h1 style={h1style}  className="H1Welcome">{props.greeting}</h1>
+                <Logo />
+            </>
             :<>
               <h1 style={h1style}  className="H1Welcome">{props.greeting}</h1>
-              <div className="DivItemListContainer">
-                <ItemList items={products}/>       
+              <div className="DivItemListContainer">        
+                <ItemList items={products}/>              
               </div> 
             </>
-             
           }
-                
-             
+  
           
         </div>
       

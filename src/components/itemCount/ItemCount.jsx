@@ -15,7 +15,7 @@ function ItemCount({stock,initial,onAdd}) {
 
         else if (count===stock) {
             setCount(stock);
-            alert("No more perro")  
+            alert("No more stock of this product.")  
             
         }
        
