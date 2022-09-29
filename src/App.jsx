@@ -8,7 +8,7 @@ import ItemDetailContainer from './pages/itemDetailContainer/ItemDetailContainer
 import Cart from './pages/cart/Cart';
 import CartProvider from './context/CartContext';
 import Footer from './components/footer/Footer';
-// import Logo from './components/logo/Logo';
+
 
 
 

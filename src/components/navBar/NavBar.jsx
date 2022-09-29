@@ -22,7 +22,7 @@ function NavBar() {
                         <li className="navli"><NavLink className="nav-link active" to="/category/Mercurial">Mercurial</NavLink></li>
                         <li className="navli"><NavLink className="nav-link active" to="/category/Phantom">Phantom</NavLink></li>
                         <li className="navli"><NavLink className="nav-link active" to="/category/Premier">Premier</NavLink></li>
-                        <li className="navli"><NavLink className="nav-link active" to="/cart"><CartWidget/></NavLink></li>
+                        <CartWidget/>
                       </div>
                     </div>
                   </div>
