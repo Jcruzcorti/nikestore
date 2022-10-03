@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './itemcount.css'
-
+import Swal from 'sweetalert2'
 
 function ItemCount({stock,initial,onAdd}) {
 
@@ -15,7 +15,23 @@ function ItemCount({stock,initial,onAdd}) {
 
         else if (count===stock) {
             setCount(stock);
-            alert("No more stock of this product.")  
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              
+              Toast.fire({
+                icon: 'error',
+                iconColor:'#e66305',
+                title: 'You reached the stock limit',
+              })
             
         }
        
@@ -29,11 +45,11 @@ function ItemCount({stock,initial,onAdd}) {
     }
     
   return (
-    <div>
+    <div className='asa'>
         <button onClick={Subtract} className="buttonSubtract">-</button>
         <span className="count">{count}</span>
         <button onClick={Add} className="buttonAdd">+</button>
-        <button onClick={()=>onAdd(count)}>Add to cart</button>
+        <button onClick={()=>onAdd(count)}  className="buttonAddToCart">Add to cart</button>
     </div>
   )
 }

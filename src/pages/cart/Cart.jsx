@@ -21,10 +21,10 @@ function Cart() {
 
               <h3 className="H3Cart">{item.name}</h3>
               <img src={item.img} alt="" className="ImgCart"/>
-              <p className="DescritpionCart">{item.description}</p>
+              {/* <p className="DescritpionCart">{item.description}</p> */}
               <p className="PriceCart">Quantity: {item.quantity}</p>
               <p className="PriceCart">Subtotal: ${item.quantity*item.price}</p>
-              <button onClick={()=>{removeItem(item.id)}} >Remove item</button>
+              <button onClick={()=>{removeItem(item.id)}} className='RemoveButton' >Remove item</button>
                            
             </div>
           </div>
@@ -34,15 +34,25 @@ function Cart() {
       <div>
         {
           cart.length === 0
-          ?<Link to="/"><button>Back to Home</button></Link>
-          :<Link to="/"><button onClick={clear} >Clear cart</button></Link>
+          ?<>
+          <p className='BackHome'>CART IS EMPTY</p>
+          <Link to="/">
+            <button className='ButtonBack'>Back to Home</button>
+          </Link>
+          </>
+          
+          :<>
+          <Link to="/"><button onClick={clear} className='ClearButton'>Clear cart</button></Link>
+          <p className="TotalPriceCart">Total: ${totalPrice()}</p>
+          </>
+          
         }
 
-        {
+        {/* {
           cart.length === 0
           ?null
           :<p className="TotalPriceCart">Total: ${totalPrice()}</p>
-        }
+        } */}
         
       </div>
 

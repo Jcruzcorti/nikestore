@@ -6,8 +6,8 @@ export const  productsData = [
         stock: 5,
         category: 'Tiempo',
         img: '../../img/tiemposg.png',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus velit numquam, iure impedit delectus voluptate vitae dolor quos, animi vel, eum modi non accusantium dolorum totam! Iure, labore veniam', 
-
+        description: 'If we talk about historical Nike boots, we have to highlight the silo time. Players like Ronaldinho, Andrea Pirlo, Francesco Totti and Carlos Tevez have used and represented them as they should be.', 
+        description2: 'High-end leather boots with mixed rubber and aluminum studs for use on damp or wet natural grass pitches. The best silo quality.'
 
     }
     ,
@@ -18,7 +18,7 @@ export const  productsData = [
         stock: 5,
         category: 'Tiempo',
         img: '../../img/tiempofg.png',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus velit numquam, iure impedit delectus voluptate vitae dolor quos, animi vel, eum modi non accusantium dolorum totam! Iure, labore veniam', 
+        description: 'If we talk about historical Nike boots, we have to highlight the silo time. Players like Ronaldinho, Andrea Pirlo, Francesco Totti and Carlos Tevez have used and represented them as they should be.', 
 
 
     }
@@ -30,7 +30,7 @@ export const  productsData = [
         stock: 5,
         category: 'Tiempo',
         img: '../../img/tiempopro.png',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus velit numquam, iure impedit delectus voluptate vitae dolor quos, animi vel, eum modi non accusantium dolorum totam! Iure, labore veniam', 
+        description: 'If we talk about historical Nike boots, we have to highlight the silo time. Players like Ronaldinho, Andrea Pirlo, Francesco Totti and Carlos Tevez have used and represented them as they should be.', 
 
 
     }
@@ -42,8 +42,8 @@ export const  productsData = [
         stock: 5,
         category: 'Tiempo',
         img: '../../img/tiempoprotf.png',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus velit numquam, iure impedit delectus voluptate vitae dolor quos, animi vel, eum modi non accusantium dolorum totam! Iure, labore veniam', 
-
+        description: 'If we talk about historical Nike boots, we have to highlight the silo time. Players like Ronaldinho, Andrea Pirlo, Francesco Totti and Carlos Tevez have used and represented them as they should be.', 
+        description2: ''
 
     }
     ,

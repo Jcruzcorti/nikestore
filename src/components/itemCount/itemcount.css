@@ -1,4 +1,36 @@
-.count{
-    color: white;
+
+.buttonSubtract{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
+.count{
+    color: #ffffff;
+    font-size: 20px;
+    padding:5px;
+}
+
+.buttonAdd{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.buttonAddToCart{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.buttonAddToCart:hover, .buttonAdd:hover, .buttonSubtract:hover{
+    color:#e66305;
+    
+}

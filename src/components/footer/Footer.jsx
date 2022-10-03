@@ -1,13 +1,18 @@
 import React from 'react'
 import './footer.css'
+import logo from '../../imgs/logonike.png'
 
 function Footer() {
 
   return (
-    <div className='DivFooter'>
-      <p className='FooterP'>Footer</p>
-    </div>
+    
+      <div className='DivFooter'>
+        <img src={logo} alt="Logofooter" className='LogoFooter'/>
+        <p className='FooterP'>© 2021 Nike, Inc. All Rights Reserved</p>
+      </div>
+
   )
+    
 }
 
 export default Footer;

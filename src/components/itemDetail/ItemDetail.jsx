@@ -26,7 +26,7 @@ function ItemDetail({item}) {
           <img src={item.img} alt="" className="ImgDetail"/>
         </div>
         <div className="DivDetail2">
-          <p className="PDetail1">{item.description}</p>
+          <p className="PDetail1">{item.description2}</p>
           <p className="PDetail2">${item.price}</p>
           {/* {
             addCart === 0

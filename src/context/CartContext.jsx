@@ -13,7 +13,24 @@ function CartProvider({children}) {
 
   function addItem(item,quantity) {
     if (isInCart(item.id)) {
-      alert("Your product is already in the cart")
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'error',
+        iconColor:'#e66305',
+        title: 'Your product is already in the cart',
+      })
+      
     }
     else{
       setCart([...cart,{...item,quantity}])
@@ -34,14 +51,22 @@ function CartProvider({children}) {
 
   function clear() {
     setCart([])
-      Swal.fire({
-      position: 'top-end',
-      icon: 'success',
-      iconColor:'#e66305',
-      title: 'The cart is empty.',
-      showConfirmButton: false,
-      timer: 2500,
-      width: "25em",  
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        iconColor:'#e66305',
+        title: 'The cart is empty',
       })
   }
 

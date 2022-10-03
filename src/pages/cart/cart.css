@@ -33,27 +33,77 @@
     height: auto;
 }
 
-.DescritpionCart{
+/* .DescritpionCart{
     padding-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     text-align: justify;
 } 
-
+ */
 
 .PriceCart{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
     font-size: 20px;
     color: #ffffff;
 }
 .TotalPriceCart{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
     font-size: 30px;
     color: #ffffff;
 }
 
+.RemoveButton{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 5px;
+    border-radius: 5px;
+}
 /* .PDetailItem{
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
     
 } */
+
+.BackHome{
+    padding-top: 30px;
+    color: #ffffff;
+    font-family: 'Alfa Slab One';
+    font-size: 40px;
+    text-decoration: none;
+    text-decoration: inherit;
+
+}
+
+.ButtonBack{
+    margin-bottom: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.ClearButton{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+
+.RemoveButton:hover,.ClearButton:hover{
+    background-color:#e66305;
+    color: #000000;
+    
+}
+.ButtonBack:hover{
+    color:#e66305;
+}
