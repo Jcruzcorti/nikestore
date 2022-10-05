@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: flex-start;
+    /* box-sizing:content-box; */
 }
 
 .H1Welcome{
