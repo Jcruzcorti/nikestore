@@ -1,11 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import './itemlistcontainer.css'
-import { productsData } from '../../mock/ProductsData';
+// import { productsData } from '../../mock/ProductsData';
 import ItemList from '../../components/itemList/ItemList';
 import Logo from '../../components/logo/Logo';
 import { useParams } from 'react-router-dom';
 // import { useContext } from 'react';
 // import { LogoContext } from '../../context/LogoContext';
+import {getItems} from '../../services/Firestore'
 
 
 
@@ -20,33 +21,15 @@ function ItemListContainer(props) {
 
 
   useEffect(()=>{
-  
-    const getProducts = new Promise((res,rej)=>{
-      
-      setTimeout(()=>{ 
-         if (categoryId === undefined) {
-          setWelcome(false)
-          res(productsData);
-          rej("Error")     
-        }
-        else{
-          setWelcome(false)
-          const categoryFound = productsData.filter(cat=>{
-            return cat.category === categoryId;
-          })
-          res(categoryFound);    
-          rej("Error")     
-        }
-        
-        
-      },1500);
 
-      
 
-    });
-
-    getProducts
-    .then((res)=>{setProducts(res);})
+    getItems()
+    .then((res)=>{
+      return(
+        setWelcome(false),
+        setProducts(res)      
+      )     
+    })
     .catch((rej)=>{setProducts(rej);})
 
   },[categoryId]);
