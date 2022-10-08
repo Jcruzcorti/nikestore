@@ -6,7 +6,7 @@ import Logo from '../../components/logo/Logo';
 import { useParams } from 'react-router-dom';
 // import { useContext } from 'react';
 // import { LogoContext } from '../../context/LogoContext';
-import {getItems} from '../../services/Firestore'
+import {getItems,getItemCategory} from '../../services/Firestore'
 
 
 
@@ -19,19 +19,31 @@ function ItemListContainer(props) {
   const {categoryId}= useParams();
 
 
-
   useEffect(()=>{
 
+    if (categoryId) {
+      getItemCategory(categoryId)
+        .then((res)=>{
+          return(
+            setWelcome(false),
+            setProducts(res)
+            ) 
+        })
+        .catch((rej)=>{setProducts(rej);})
+    }
 
-    getItems()
-    .then((res)=>{
-      return(
-        setWelcome(false),
-        setProducts(res)      
-      )     
-    })
-    .catch((rej)=>{setProducts(rej);})
+    else {
+      getItems()
+        .then((res)=>{
+          return(
+            setWelcome(false),
+            setProducts(res)      
+          )     
+        })
+        .catch((rej)=>{setProducts(rej);})
 
+    }
+    
   },[categoryId]);
 
   

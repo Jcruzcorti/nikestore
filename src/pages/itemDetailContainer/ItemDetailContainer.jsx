@@ -1,8 +1,9 @@
 import React,{useEffect,useState} from 'react'
 import './itemdetailcontainer.css'
-import {productsData} from '../../mock/ProductsData'
+// import {productsData} from '../../mock/ProductsData'
 import ItemDetail from '../../components/itemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
+import {getAnItem} from '../../services/Firestore'
 
 function ItemDetailContainer(props) {
 
@@ -12,17 +13,7 @@ function ItemDetailContainer(props) {
 
   useEffect(()=>{
     
-    const getProduct = new Promise ((res,rej)=>{
-      setTimeout(() => {
-        const itemFound = productsData.find((boots)=>{
-            return (boots.id === parseInt(itemId) )
-        })
-        res(itemFound);
-        rej("Error");
-      }, 2000);
-    });
-
-    getProduct
+    getAnItem(itemId)
     .then((res)=>{setProduct(res)})
     .catch((rej)=>{setProduct(rej)})
 
