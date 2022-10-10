@@ -50,7 +50,7 @@
 .TotalPriceCart{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 25px;
     color: #ffffff;
 }
 
@@ -91,7 +91,7 @@
 
 .ClearButton{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #ffffff;
     color: #000000;
     margin-left: 5px;
@@ -107,3 +107,65 @@
 .ButtonBack:hover{
     color:#e66305;
 }
+
+
+.TotalPriceCartForm{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.BuyButton{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 5px;
+    border-radius: 5px;
+ 
+}
+
+.BuyButton:hover{
+    background-color:#e66305;
+    color: #000000;
+}
+
+
+
+.BuyButton::before{
+    content: 'Buy now';
+}
+.BuyButton:hover::before{
+    content: '';
+    opacity: 0;
+}
+
+
+.BuyButton:hover::after{
+    content: 'Just do it';
+    background-color:#e66305;
+    color: #000000;
+}
+
+
+
+ 
+
+
+
+/* .BuyButton1:hover::before{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color:#e66305;
+    color: #000000;
+    content: 'Just do it';
+    padding: 0;
+} */
+
+

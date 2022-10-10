@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-import {collection, doc, getDoc, getDocs, getFirestore, limit, orderBy, query, where} from 'firebase/firestore'
+import {addDoc, collection, doc, getDoc, getDocs, getFirestore, limit, orderBy, query, Timestamp, where} from 'firebase/firestore'
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBBe3QwzFf2VLtIRuIHCrYAt_Apkf0KOMQ",
@@ -49,25 +49,45 @@ const appFirestore = getFirestore(appFirebase)
         };
 
     }
-
-
+    
     export async function getItemCategory(categoryId){
+        
 
         const bootsCollection = collection(appFirestore, "boots")
         const qCategory = query(bootsCollection,where("category", "==", categoryId))
         // const a = query(qCategory,orderBy("idorder"), limit(18))
         // const qOrder2 = query(qCategory,where("idorder", "<=", "a"),orderBy("idorder"))
         const plantsCatSnapchot = await getDocs(qCategory)
-        
+
             let answerCat = plantsCatSnapchot.docs.map(doc=>{
                 return{
                     ...doc.data(),
                     id:doc.id
+                   
                 }
             })
 
             return answerCat;
     }
+
+
+
+    export async function buyOrder(dataOrden) {
+        const orderCollection = collection(appFirestore,"orders");
+        const dataTimeStamp = Timestamp.now();
+    
+        const orderWithDate ={
+            buyer: dataOrden.buyer,
+            items: dataOrden.items,
+            total: dataOrden.total,
+            date: dataTimeStamp
+        }
+    
+        const orderCreated = await addDoc(orderCollection,orderWithDate);
+    
+        return orderCreated;
+    }
+    
 
 
 

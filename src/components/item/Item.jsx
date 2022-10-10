@@ -12,7 +12,7 @@ function Item({item}) {
           <h3 className="H3Item">{item.name}</h3>
           <img src={item.img} alt=""  className="ImgItem"/>
           <p className="DescritpionItem">{item.description}</p>
-          <p className="PriceItem">${item.price}</p>
+          <p className="PriceItem">${item.price.toFixed(2)}</p>
         </Link>
       </div>
 
