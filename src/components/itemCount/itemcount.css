@@ -1,4 +1,6 @@
-
+.DivItemCount{
+    margin-top: 20px;
+}
 .buttonSubtract{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
@@ -33,4 +35,56 @@
 .buttonAddToCart:hover, .buttonAdd:hover, .buttonSubtract:hover{
     color:#e66305;
     
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+    .DivItemCount{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+    .buttonSubtract{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5px;
+        border: 2px solid #000000;
+    }
+    
+    .count{
+        color: #ffffff;
+        font-size: 15px;
+        padding:5px;
+        
+    }
+    
+    .buttonAdd{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 5px;
+        border: 2px solid #000000;
+    }
+    
+    .buttonAddToCart{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        background-color: #000000;
+        color: #ffffff;
+        margin-left: 5px;
+        border-radius: 5px;
+        box-shadow: none;
+        border: 2px solid #000000;
+    }
+    
+ 
+    
+
 }

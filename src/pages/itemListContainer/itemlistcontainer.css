@@ -1,4 +1,3 @@
-
 .DivItemListContainer{
     display: flex;
     flex-wrap: wrap;
@@ -11,12 +10,13 @@
 .H1Welcome{
     font-family: 'Alfa Slab One';
     padding-top: 30px;
+    font-size: 50px;
     
 }
-.WelcomeButton{    
+/* .WelcomeButton{    
     background-color: #0f0f0f;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 50px;
     border-radius: 4px;
     box-shadow:2px 2px 3px 0px #e66305;
     width: auto;
@@ -24,4 +24,41 @@
     margin-top: 50px;
     margin-bottom: 50px;
       
+} */
+
+
+@media screen and (max-width: 768px){
+
+
+
+    .DivItemListContainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+        /* box-sizing:content-box; */
+    }
+    
+    .H1Welcome{
+        font-family: 'Alfa Slab One';
+        padding: 30px 5px 0px 5px;
+        font-size: 22px;
+        
+        
+    }
+    /* .WelcomeButton{    
+        background-color: #0f0f0f;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 4px;
+        box-shadow:2px 2px 3px 0px #e66305;
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+          
+    } */
+
 }
+

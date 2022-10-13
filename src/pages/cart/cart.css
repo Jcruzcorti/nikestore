@@ -28,9 +28,15 @@
 
 }
 
+.H3Cart{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px ;
+}
+
 .ImgCart{
     width: 100%;
     height: auto;
+    filter: drop-shadow(2px 2px 5px #ffffff);
 }
 
 /* .DescritpionCart{
@@ -45,19 +51,19 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
     font-size: 20px;
-    color: #ffffff;
+    color: #f4f4f4;
 }
 .TotalPriceCart{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
     font-size: 25px;
-    color: #ffffff;
+    color: #f4f4f4;
 }
 
 .RemoveButton{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     color: #000000;
     margin-left: 5px;
     border-radius: 5px;
@@ -84,7 +90,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     background-color: #000000;
-    color: #ffffff;
+    color: #f4f4f4;
     margin-left: 5px;
     border-radius: 5px;
 }
@@ -92,12 +98,22 @@
 .ClearButton{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     color: #000000;
     margin-left: 5px;
     border-radius: 5px;
 }
 
+
+.ClearButton2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: #f4f4f4;
+    color: #000000;
+    margin-left: 5px;
+    border-radius: 5px;
+ 
+}
 
 .RemoveButton:hover,.ClearButton:hover{
     background-color:#e66305;
@@ -122,7 +138,7 @@
 .BuyButton{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     color: #000000;
     margin-left: 5px;
     border-radius: 5px;
@@ -169,3 +185,180 @@
 } */
 
 
+@media screen and (max-width: 768px){
+
+    .DivCart{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        /* float:left;
+        margin: 15px; */
+     
+    }
+    /* f4f4f4 */
+    
+    .DivCartSecond{
+        
+        color: #f4f4f4;
+        border: 0.5px solid #000000 ;
+        box-shadow: 0px 0px 3px 0px #e66305;
+        /* text-align: center; */
+        background-color: #000000;
+        /* border-radius: 6px; */
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 15px;
+        padding: 10px;
+
+    }
+
+    .H3Cart{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px ;
+    }
+    
+    .ImgCart{
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(2px 2px 5px #ffffff);
+    }
+    
+    /* .DescritpionCart{
+        padding-top: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        text-align: justify;
+    } 
+     */
+    
+    .PriceCart{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #f4f4f4;
+    }
+    .TotalPriceCart{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #f4f4f4;
+    }
+    
+    .RemoveButton{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        background-color: #ffffff;
+        color: #000000;
+        margin-left: 0px;
+        border-radius: 4px;
+        border: 0px solid #000000;
+        box-shadow: 1px 1px 3px 0px #f4f4f4;
+    }
+    /* .PDetailItem{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        
+    } */
+    
+    .BackHome{
+        padding-top: 30px;
+        color: #ffffff;
+        font-family: 'Alfa Slab One';
+        font-size: 22px;
+        text-decoration: none;
+        text-decoration: inherit;
+    
+    }
+    
+    .ButtonBack{
+        margin-bottom: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        background-color: #000000;
+        color: #ffffff;
+        margin-left: 0px;
+        border-radius: 2px;
+        border: 2px solid #000000;
+        box-shadow: 1px 1px 2px 0px #f4f4f4;
+        
+    }
+    
+    .ClearButton{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        background-color: #ffffff;
+        color: #000000;
+        margin-left: 5px;
+        border-radius: 3px;
+        border: 0px solid #000000;
+        box-shadow: 1px 1px 3px 0px #f4f4f4;
+        
+    }
+    
+    .RemoveButton:hover,.ClearButton:hover{
+        background-color:#f4f4f4;
+        color: #000000;
+        
+    }
+
+
+
+    .TotalPriceCartForm{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+        color: #000000;
+        text-align: center;
+        padding-top: 10px;
+        margin: 0;
+    }
+    .ClearButton2{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        background-color: #f4f4f4;
+        color: #000000;
+        margin-left: 0px;
+        border-radius: 5px;
+     
+    }
+    
+    .BuyButton{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        background-color: #f4f4f4;
+        color: #000000;
+        margin-left: 0px;
+        border-radius: 5px;
+     
+    }
+    
+    .BuyButton:hover{
+        background-color:#f4f4f4;
+        color: #000000;
+    }
+    
+    
+    
+    .BuyButton::before{
+        content: 'Buy now';
+    }
+    .BuyButton:hover::before{
+        content: '';
+        opacity: 0;
+    }
+    
+    
+    .BuyButton:hover::after{
+        content: 'Buy now';
+        background-color:#f4f4f4;
+        color: #000000;
+    }
+    
+
+
+}

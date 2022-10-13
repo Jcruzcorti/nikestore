@@ -45,10 +45,8 @@ function ModalCart() {
       buyer,
       items: cart,
       total: totalPrice(),
-    
-
-
     }
+    
     if (buyer.name=== "") {
       const Toast = Swal.mixin({
         toast: true,
@@ -159,7 +157,7 @@ function ModalCart() {
           <Modal.Title>Complete the order</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <div>
+        <div >
           <form>
             <div className="form-group">
                 <label htmlFor="formGroupExampleInput">Full Name</label>
@@ -173,17 +171,22 @@ function ModalCart() {
                 <label htmlFor="formGroupExampleInput2">E-mail</label>
                 <input onChange={handleChange} type="email" name='email' className="form-control" id="formGroupExampleInput2" placeholder="E-mail" aria-required/>
             </div>
+            {/* <div>
+                <label htmlFor="formGroupExampleInput2">Size</label>
+                <input onChange={handleChange} type="list" name='list' className="form-control" id="formGroupExampleInput2" placeholder="Size" aria-required/>
+            </div> */}
               <p className="TotalPriceCartForm">Total: ${totalPrice().toFixed(2)}</p>
           </form>
         </div>
         </Modal.Body>
         <Modal.Footer>
-          <button className='ClearButton' onClick={handleClose}>Close</button>        
+          <button className='ClearButton2' onClick={handleClose}>Close</button>        
           <button onClick={handleFin} className='BuyButton'></button>    
           
         </Modal.Footer>
       </Modal>
     </>
+    
   );
 }
 

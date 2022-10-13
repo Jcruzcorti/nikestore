@@ -50,7 +50,6 @@ function ItemListContainer(props) {
 
   const h1style = {
     color: props.color,
-    fontSize: props.fontSize,
     fontFamily: props.fontFamily
   } 
 
@@ -62,7 +61,7 @@ function ItemListContainer(props) {
             welcome
             ?<>  
               <h1 style={h1style}  className="H1Welcome">{props.greeting}</h1>
-                <Logo />
+                <Logo/>
             </>
             :<>
               <h1 style={h1style}  className="H1Welcome">{props.greeting}</h1>

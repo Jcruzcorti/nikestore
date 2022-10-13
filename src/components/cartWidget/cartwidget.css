@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: auto;
+    margin: 0;
 }
 
 .imgcart{
@@ -15,4 +15,31 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight:600;
     margin: auto;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .divcartwidget{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .imgcart{
+        width: 24px;
+        height: auto;
+    }
+    
+    .nav-p{
+        font-size: 16px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:600;
+        margin: 0;
+    }
+    
+
 }

@@ -32,9 +32,9 @@ function App() {
             {/* <p onClick={()=>{setWelcome(false)}} className="WelcomeToNike"><Logo/></p> */}
             <section className="App-section">
               <Routes>
-                <Route path="/" element={<ItemListContainer greeting="WELCOME TO NIKE STORE" color="#ffffff" fontSize="50px"/>}/>
-                <Route path="/category/:categoryId" element={<ItemListContainer greeting="PRODUCT CATEGORY" color="#ffffff" fontSize="40px"/>}/>
-                <Route path="/detail/:itemId" element={<ItemDetailContainer greeting="PRODUCT DETAIL" color="#ffffff" fontSize="40px"/>}/>
+                <Route path="/" element={<ItemListContainer greeting="WELCOME TO NIKE STORE" color="#ffffff" />}/>
+                <Route path="/category/:categoryId" element={<ItemListContainer greeting="PRODUCT CATEGORY" color="#ffffff" />}/>
+                <Route path="/detail/:itemId" element={<ItemDetailContainer greeting="PRODUCT DETAIL" color="#ffffff" />}/>
                 <Route path="/:cart" element={<Cart />}/>
               </Routes>
             </section>

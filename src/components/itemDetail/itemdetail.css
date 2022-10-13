@@ -53,8 +53,100 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     font-weight:bold;
+    margin-bottom: 0;
 }
 /* 
 .PDetail2:hover{
    color: #e66305;
 } */
+
+.DivSelectPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+
+.PDetailSize{
+    text-align:center;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight:bold;
+    margin-bottom: 0;
+    
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .DivDetail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 3px 0px #e66305;
+        margin: 15px;
+        padding:10px ;
+    }
+    
+    .DivDetail1{
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        float: left; */
+        padding-top: 0;
+        
+    
+       
+    }
+    
+    .H3Detail{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+    }
+    .ImgDetail{
+        width: 80%;
+        height: auto;
+        filter: drop-shadow(2px 2px 5px #ffffff);
+      
+    }
+    
+    
+    .DivDetail2{
+        padding-top: 0;
+        
+    
+    }
+    
+    .PDetail1{
+        
+        text-align:justify;
+        color: #f4f4f4;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+    }
+    
+    .PDetail2{
+        text-align:center;
+        color: #f4f4f4;
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-size: 18px;
+        font-weight:bold;
+        margin-bottom: 0;
+    }
+    /* 
+    .PDetail2:hover{
+       color: #e66305;
+    } */
+    
+  
+
+}

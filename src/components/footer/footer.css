@@ -20,3 +20,33 @@
     height: auto;
    
 }
+
+
+@media screen and (max-width: 768px){
+    
+    
+    .DivFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .FooterP{
+        font-size: 12px;
+        font-family: 'Alfa Slab One';
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+        
+    
+    }
+    
+    .LogoFooter{
+        width: 70px;
+        height: auto;
+       
+    }
+    
+
+}

@@ -22,11 +22,11 @@
   height: auto;
   
 }
-.App-logo2 {
+/* .App-logo2 {
   width: 400px;
   height: auto;
   
-}
+} */
 
 
 .App-section{
@@ -50,3 +50,37 @@
     grid-area: App-section; }
   #grilla .App-footer {
     grid-area: App-footer; } */
+
+
+@media screen and (max-width: 768px){
+  
+  .App {
+    text-align: center;
+    background:linear-gradient(#161516 80%,#0f0f0f);
+  }
+  .App-header{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .App-logo {
+    width: 120px;
+    height: auto;
+    
+  }
+
+  .App-section{
+    margin: 0;  
+  
+  }
+  
+  .WelcomeToNike{
+    background-color: #161516;
+  }  
+
+
+}

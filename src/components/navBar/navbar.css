@@ -1,21 +1,45 @@
-
 .divnav{
     display: flex;
     flex-direction: row;
     font-size: 16px;
     background-color: #161516;
-    color: #ffffff;
+    color: #f4f4f4;
 }
 
 .navli{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     color: #ffffff;
     font-family: 'Alfa Slab One';
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     
 }
+
+
+
+@media screen and (max-width: 768px){
+
+    .divnav{
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        background-color: #161516;
+        color: #f4f4f4;
+    }
+    
+    .navli{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #ffffff;
+        font-family: 'Alfa Slab One';
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        
+    }
+
+   
+}    
 
 
 

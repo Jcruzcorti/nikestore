@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
-import './cart.css'
-import CartModal from './CartModal'
+import './cart.css';
+import CartModal from './CartModal';
+// import MyComponent from '../../components/select/Select';
 
 
 function Cart() {
@@ -24,6 +25,7 @@ function Cart() {
               <img src={item.img} alt="" className="ImgCart"/>
               {/* <p className="DescritpionCart">{item.description}</p> */}
               <p className="PriceCart">Quantity: {item.quantity}</p>
+              {/* <p className="PriceCart">Size: {item.size}</p> */}
               <p className="PriceCart">Subtotal: ${item.quantity*item.price.toFixed(2)}</p>
               <button onClick={()=>{removeItem(item.id)}} className='RemoveButton' >Remove item</button>
                            
@@ -49,12 +51,6 @@ function Cart() {
           </>
           
         }
-
-        {/* {
-          cart.length === 0
-          ?null
-          :<CartModal cart={cart} totalPrice={totalPrice}/>
-        } */}
         
       </div>
 

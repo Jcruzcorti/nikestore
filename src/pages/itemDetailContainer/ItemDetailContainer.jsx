@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import './itemdetailcontainer.css'
+
 // import {productsData} from '../../mock/ProductsData'
 import ItemDetail from '../../components/itemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
