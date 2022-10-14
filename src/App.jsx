@@ -10,43 +10,30 @@ import CartProvider from './context/CartContext';
 import Footer from './components/footer/Footer';
 
 
-
-
 function App() {
   
 
   return (
     <div className="App" id="grilla">
-        
-
      <CartProvider>  
-
         <BrowserRouter>
           <header className="App-header">
             <NavLink to="/"><img  src={logo} className="App-logo" alt="logo" /></NavLink>        
             <NavBar/>
           </header>
-          
-          
-          
-            {/* <p onClick={()=>{setWelcome(false)}} className="WelcomeToNike"><Logo/></p> */}
-            <section className="App-section">
-              <Routes>
-                <Route path="/" element={<ItemListContainer greeting="WELCOME TO NIKE STORE" color="#ffffff" />}/>
-                <Route path="/category/:categoryId" element={<ItemListContainer greeting="PRODUCT CATEGORY" color="#ffffff" />}/>
-                <Route path="/detail/:itemId" element={<ItemDetailContainer greeting="PRODUCT DETAIL" color="#ffffff" />}/>
-                <Route path="/:cart" element={<Cart />}/>
-              </Routes>
-            </section>
+          <section className="App-section">
+            <Routes>
+              <Route path="/" element={<ItemListContainer greeting="WELCOME TO NIKE STORE" color="#ffffff" />}/>
+              <Route path="/category/:categoryId" element={<ItemListContainer greeting="PRODUCT CATEGORY" color="#ffffff" />}/>
+              <Route path="/detail/:itemId" element={<ItemDetailContainer greeting="PRODUCT DETAIL" color="#ffffff" />}/>
+              <Route path="/:cart" element={<Cart />}/>
+            </Routes>
+          </section>
                
-
           <footer className="App-footer">
             <Footer/>
           </footer>
-
-          </BrowserRouter> 
-          
-
+        </BrowserRouter> 
       </CartProvider>   
     </div>
   );

@@ -52,11 +52,8 @@ const appFirestore = getFirestore(appFirebase)
     
     export async function getItemCategory(categoryId){
         
-
         const bootsCollection = collection(appFirestore, "boots")
         const qCategory = query(bootsCollection,where("category", '==', categoryId));
-        // const asa = query(qCategory,orderBy("idorder"), limit(18))
-        // const qOrder2 = query(qCategory,where("idorder", "<=", "a"),orderBy("idorder"))
         const plantsCatSnapchot = await getDocs(qCategory)
 
             let answerCat = plantsCatSnapchot.docs.map(doc=>{
@@ -66,7 +63,6 @@ const appFirestore = getFirestore(appFirebase)
                    
                 }
             })
-
             return answerCat;
     }
 
@@ -89,23 +85,5 @@ const appFirestore = getFirestore(appFirebase)
         return orderCreated;
     }
     
-
-
-
-    // export async function addSize(sizeSelect) {
-    //     const bootsCollection = collection(appFirestore,"boots");
-       
-    
-    //     const sendSize ={
-    //         size: sizeSelect.size,
-    //     }
-    
-    //     const sizeCreated = await addDoc(bootsCollection,sendSize);
-    
-    //     return sizeCreated;
-    // }
-    
-
-
 
 export default appFirestore;

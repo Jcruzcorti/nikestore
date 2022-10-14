@@ -1,6 +1,4 @@
 import React,{useEffect,useState} from 'react'
-
-// import {productsData} from '../../mock/ProductsData'
 import ItemDetail from '../../components/itemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 import {getAnItem} from '../../services/Firestore'

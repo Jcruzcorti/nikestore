@@ -1,13 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import './itemlistcontainer.css'
-// import { productsData } from '../../mock/ProductsData';
 import ItemList from '../../components/itemList/ItemList';
 import Logo from '../../components/logo/Logo';
 import { useParams } from 'react-router-dom';
-// import { useContext } from 'react';
-// import { LogoContext } from '../../context/LogoContext';
 import {getItems,getItemCategory} from '../../services/Firestore'
-
 
 
 
@@ -17,7 +13,6 @@ function ItemListContainer(props) {
   const [products, setProducts] = useState([])
 
   const {categoryId}= useParams();
-
 
   useEffect(()=>{
 
@@ -41,12 +36,10 @@ function ItemListContainer(props) {
           )     
         })
         .catch((rej)=>{setProducts(rej);})
-
     }
     
   },[categoryId]);
-
-  
+ 
 
   const h1style = {
     color: props.color,
@@ -56,7 +49,6 @@ function ItemListContainer(props) {
   return (
     <div> 
         <div>
-
           {
             welcome
             ?<>  
@@ -69,9 +61,7 @@ function ItemListContainer(props) {
                 <ItemList items={products}/>              
               </div> 
             </>
-          }
-  
-          
+          }           
         </div>
       
     </div>

@@ -1,7 +1,6 @@
 #body{  
     background-color: #161516;
     box-sizing: content-box;   
-    /* margin: 15px; */
 }
 
 .App {
@@ -22,11 +21,7 @@
   height: auto;
   
 }
-/* .App-logo2 {
-  width: 400px;
-  height: auto;
-  
-} */
+
 
 
 .App-section{
@@ -38,18 +33,6 @@
   background-color: #161516;
 }
 
-
-/* #grilla {
-  display: grid;
-  grid-template-areas: "App-header App-header App-header"
- "App-section App-section App-section "
- "App-footer App-footer App-footer"; }
-  #grilla .App-header {
-    grid-area: App-header; }
-  #grilla .App-section {
-    grid-area: App-section; }
-  #grilla .App-footer {
-    grid-area: App-footer; } */
 
 
 @media screen and (max-width: 768px){

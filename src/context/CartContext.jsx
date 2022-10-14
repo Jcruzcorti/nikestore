@@ -10,7 +10,6 @@ function CartProvider({children}) {
   const [cart,setCart] = useState([])
   
 
-
   function addItem(item,quantity) {
     if (isInCart(item.id)) {
       const Toast = Swal.mixin({

@@ -4,18 +4,16 @@
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    /* float:left;
-    margin: 15px; */
+
  
 }
-/* f4f4f4 */
+
 
 .DivCartSecond{
     padding: 10px;
     color: #f4f4f4;
     border: 0.5px solid #000000 ;
     box-shadow: 0px 0px 2px 1px #e66305;
-    /* text-align: center; */
     background-color: #000000;
     border-radius: 6px;
     width: 50%;
@@ -23,8 +21,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px; 
 
 }
 
@@ -39,13 +36,6 @@
     filter: drop-shadow(2px 2px 5px #ffffff);
 }
 
-/* .DescritpionCart{
-    padding-top: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    text-align: justify;
-} 
- */
 
 .PriceCart{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -68,12 +58,7 @@
     margin-left: 5px;
     border-radius: 5px;
 }
-/* .PDetailItem{
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    
-} */
+
 
 .BackHome{
     padding-top: 30px;
@@ -169,22 +154,6 @@
 
 
 
- 
-
-
-
-/* .BuyButton1:hover::before{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    margin-left: 5px;
-    border-radius: 5px;
-    background-color:#e66305;
-    color: #000000;
-    content: 'Just do it';
-    padding: 0;
-} */
-
-
 @media screen and (max-width: 768px){
 
     .DivCart{
@@ -193,20 +162,16 @@
         justify-content: space-around;
         align-content: center;
         align-items: center;
-        /* float:left;
-        margin: 15px; */
      
     }
-    /* f4f4f4 */
+    
     
     .DivCartSecond{
         
         color: #f4f4f4;
         border: 0.5px solid #000000 ;
-        box-shadow: 0px 0px 3px 0px #e66305;
-        /* text-align: center; */
+        box-shadow: 0px 0px 3px 0px #e66305;       
         background-color: #000000;
-        /* border-radius: 6px; */
         width: 80%;
         height: auto;
         margin-left: auto;
@@ -227,13 +192,6 @@
         filter: drop-shadow(2px 2px 5px #ffffff);
     }
     
-    /* .DescritpionCart{
-        padding-top: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-        text-align: justify;
-    } 
-     */
     
     .PriceCart{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -258,12 +216,7 @@
         border: 0px solid #000000;
         box-shadow: 1px 1px 3px 0px #f4f4f4;
     }
-    /* .PDetailItem{
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: bold;
-        
-    } */
+
     
     .BackHome{
         padding-top: 30px;
@@ -302,11 +255,8 @@
     
     .RemoveButton:hover,.ClearButton:hover{
         background-color:#f4f4f4;
-        color: #000000;
-        
+        color: #000000;      
     }
-
-
 
     .TotalPriceCartForm{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -333,8 +283,7 @@
         background-color: #f4f4f4;
         color: #000000;
         margin-left: 0px;
-        border-radius: 5px;
-     
+        border-radius: 5px;  
     }
     
     .BuyButton:hover{
@@ -342,8 +291,7 @@
         color: #000000;
     }
     
-    
-    
+     
     .BuyButton::before{
         content: 'Buy now';
     }
@@ -351,14 +299,11 @@
         content: '';
         opacity: 0;
     }
-    
-    
+      
     .BuyButton:hover::after{
         content: 'Buy now';
         background-color:#f4f4f4;
         color: #000000;
     }
     
-
-
 }

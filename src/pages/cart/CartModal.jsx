@@ -1,7 +1,5 @@
 import React, { useState,useContext } from 'react';
-// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-// import CartForm from './CartForm';
 import Swal from 'sweetalert2'
 import { CartContext } from '../../context/CartContext';
 import {buyOrder} from '../../services/Firestore'
@@ -138,15 +136,8 @@ function ModalCart() {
 
 
   return (
-    <>
-      
-        <button className='ClearButton' onClick={handleShow}>Checkout</button>
-        {/* <button className='BuyButton2' onClick={handleShow}>
-          Just do it
-        </button> */}
-
-        
-
+    <>   
+      <button className='ClearButton' onClick={handleShow}>Checkout</button>
       <Modal
         show={show}
         onHide={handleClose}
@@ -171,10 +162,6 @@ function ModalCart() {
                 <label htmlFor="formGroupExampleInput2">E-mail</label>
                 <input onChange={handleChange} type="email" name='email' className="form-control" id="formGroupExampleInput2" placeholder="E-mail" aria-required/>
             </div>
-            {/* <div>
-                <label htmlFor="formGroupExampleInput2">Size</label>
-                <input onChange={handleChange} type="list" name='list' className="form-control" id="formGroupExampleInput2" placeholder="Size" aria-required/>
-            </div> */}
               <p className="TotalPriceCartForm">Total: ${totalPrice().toFixed(2)}</p>
           </form>
         </div>

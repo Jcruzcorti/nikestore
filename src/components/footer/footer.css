@@ -11,14 +11,11 @@
     color: #ffffff;
     text-align: center;
     margin: 0;
-    
-
 }
 
 .LogoFooter{
     width: 120px;
     height: auto;
-   
 }
 
 
@@ -37,16 +34,13 @@
         font-family: 'Alfa Slab One';
         color: #ffffff;
         text-align: center;
-        margin: 0;
-        
+        margin: 0;       
     
     }
     
     .LogoFooter{
         width: 70px;
-        height: auto;
-       
+        height: auto;      
     }
-    
 
 }

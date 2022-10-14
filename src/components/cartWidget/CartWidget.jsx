@@ -10,8 +10,7 @@ function CartWidget() {
 
   return (
     <div className="divcartwidget">
-        <li className="navli"><NavLink className="nav-link active" to="/cart"><img src={imgcart} alt="cart" className="imgcart"/>   </NavLink></li>
-          
+        <li className="navli"><NavLink className="nav-link active" to="/cart"><img src={imgcart} alt="cart" className="imgcart"/>   </NavLink></li>        
         {
           getTotalItem() === 0
           ? null
