@@ -7,7 +7,7 @@ import {addDoc, collection, doc, getDoc, getDocs, getFirestore, limit, orderBy, 
 const firebaseConfig = {
   apiKey: "AIzaSyBBe3QwzFf2VLtIRuIHCrYAt_Apkf0KOMQ",
   authDomain: "nikestore-4168a.firebaseapp.com",
-  projectId: "nikestore-4168a",
+  projectId: process.env.REACT_APP_PROYECT_FB_ID,
   storageBucket: "nikestore-4168a.appspot.com",
   messagingSenderId: "553368638329",
   appId: "1:553368638329:web:ce05007124b6ca19c915a8"
