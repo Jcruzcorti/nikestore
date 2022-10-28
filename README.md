@@ -21,4 +21,3 @@ In our default terminal, we clone the folder by typing "git clone" + link:
 3-Finally, in the terminal we carry out the command "npm start" and the web site will open in the predetermined browser after a few seconds/minutes of waiting.
 
 
-Translated with www.DeepL.com/Translator (free version).
